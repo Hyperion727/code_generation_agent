@@ -1,6 +1,6 @@
 # Code Generation Agent Demo
 
-A practical demo showing how to build your own code generation agent that actually executes the code it writes. Built with [Atomic Agents](https://github.com/KennyVaneetvelde/atomic-agents) and [Cohere Terrarium](https://github.com/cohere-ai/cohere-terrarium).
+A practical demo accompanying the article ["Create Your Own Sandboxed Code Generation Agent in Minutes"](https://medium.com/ai-advances/create-your-own-sandboxed-code-generation-agent-in-minutes-1603ae695f16?sk=d8ee2dabfbdc69a877caa50ae29ff61e) showing how to build your own code generation agent that actually executes the code it writes. Built with [Atomic Agents](https://github.com/KennyVaneetvelde/atomic-agents) and [Cohere Terrarium](https://github.com/cohere-ai/cohere-terrarium).
 
 ## What's This?
 
@@ -45,22 +45,16 @@ Run the demo:
 poetry run python code_gen_agent/main.py
 ```
 
-This will generate a text analyzer that counts words, calculates average word length, and finds the most frequent word - with proper error handling and all.
+This will generate a text analyzer that counts words, calculates average word length, and finds the most frequent word.
+For demo purposes, the user request for which code to generate is hardcoded inside the `main.py` file so feel free to change it to something else and have a play around!
 
 ## How It Works
 
-The magic happens in three main components:
+The magic happens in just two main components:
 
 1. **CodeGenerationAgent**: Handles the code generation using GPT-4o-mini
 2. **TerrariumTool**: Manages code execution in the sandboxed environment
-3. **Rich Console Output**: Makes everything look pretty
-
-Check out the [full tutorial](https://medium.com/@kenny_v/create-your-own-sandboxed-code-generation-agent-in-minutes-1603ae695f16) for the nitty-gritty details.
-
-## Contributing
-
-Found a bug? Have an idea? PRs are welcome! Just keep in mind this is a demo project meant to show the basics of code generation agents.
-
+   
 ## License
 
 MIT - do whatever you want with it.
