@@ -46,7 +46,7 @@ class TerrariumToolConfig(BaseToolConfig):
     """Configuration for the TerrariumTool"""
 
     base_url: str = Field(
-        default="http://localhost:8081",
+        default="http://localhost:8080",
         description="Base URL for the Terrarium service",
     )
     timeout: int = Field(

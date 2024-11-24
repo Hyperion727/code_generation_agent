@@ -6,7 +6,7 @@ from rich.syntax import Syntax
 
 def send_to_terrarium(code: str) -> dict:
     response = requests.post(
-        "http://localhost:8081",
+        "http://localhost:8080",
         json={"code": code},
         headers={"Content-Type": "application/json"},
         timeout=30,
